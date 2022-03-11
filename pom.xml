@@ -50,8 +50,8 @@
             </plugin>
         </plugins>
     </build>
-    
-    <!-- to build frontend project automatically in static folder -->
+
+    <!-- to build frontend project (we can also disable this by go to maven and find build-frontend and uncheck -->
     <profiles>
         <profile>
             <id>build-frontend</id>
@@ -99,6 +99,28 @@
                                 <!-- to build whole project frontend -->
                                 <configuration>
                                     <arguments>run build</arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- to copy static frontend build to BE static folder  -->
+                    <plugin>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>copy-build-folder</id>
+                                <phase>process-classes</phase>
+                                <!-- when process the classes execute the goals bellow  -->
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <resources>
+                                        <resource>
+                                            <directory>src/frontend/build</directory>
+                                        </resource>
+                                    </resources>
+                                    <outputDirectory>${basedir}/target/classes/static</outputDirectory>
                                 </configuration>
                             </execution>
                         </executions>
