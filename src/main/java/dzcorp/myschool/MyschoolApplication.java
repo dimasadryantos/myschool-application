@@ -8,6 +8,7 @@ public class MyschoolApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MyschoolApplication.class, args);
+        System.out.println("TETSTSETSETSETSETSET !!!!!");
     }
 
 }
