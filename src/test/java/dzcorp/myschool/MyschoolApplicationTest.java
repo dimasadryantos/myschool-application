@@ -11,6 +11,6 @@ class MyschoolApplicationTest {
 
     @Test
     void itShouldFail() {
-        System.out.println("TESTTTTTTTTTT ");
+        System.out.println("TESTTTTTTTTT ");
     }
 }
