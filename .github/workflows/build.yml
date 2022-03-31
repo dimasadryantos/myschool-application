@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 env:
-  POSTGRESQL_VERSION: 12.8
-  POSTGRESQL_DB: ebdb
+  POSTGRESQL_VERSION: 13.1
+  POSTGRESQL_DB: my-school-dev
   POSTGRESQL_USER: dimasdz
   POSTGRESQL_PASSWORD: dimasdz99
   JAVA_VERSION: 1.15
