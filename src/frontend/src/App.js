@@ -210,7 +210,7 @@ function App() {
                     {renderStudents()}
                 </div>
             </Content>
-            <Footer style={{textAlign: 'center'}}>Created By Dimas Adriyanto Setyawan ©2022</Footer>
+            <Footer style={{textAlign: 'center'}}>Created By Dimas Adriyanto Setyawan V.0.1 ©2022</Footer>
         </Layout>
     </Layout>
 
